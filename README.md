@@ -21,7 +21,9 @@ $ docker volume create datadb
 // create folder datadb ?
 
 * RUN CONTAINER
-$ docker run -v /datadb:/lab2volume lab2
+# docker run -v //c/<path>:/<container path> IMAGE_NAME
+
+$ docker run -v /c/PATH/TO/FOLDER/?:/? lab2
 *************************************************************
 # 2
 
