@@ -19,15 +19,16 @@ $ docker build -t IMAGE_NAME PATH/TO/FOLDER/Dockerfile
 $ cd PATH/TO/MY/Dockerfile
 $ docker build -t IMAGE_NAME .
 
-* CREATE VOLUME:
-$ docker volume create VOLUME_NAME
-
 Hint: https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume
 
-* RUN CONTAINER
-# docker run -v //c/<path>:/<container path> IMAGE_NAME
+* CREATE VOLUME:
+$ docker volume create VOLUME_NAME
+$ docker volume inspect VOLUME_NAME
 
-$ docker run -v //d/Mega/POLITO/Applicazioni\ Internet/LAB/lab2/dbdata:/datadb
+take PATH and use the following:
+
+* RUN CONTAINER (win)
+# docker run -v //DRIVE_LETTER/PATH:/<container path> -p 5432:5432 IMAGE_NAME
 
 Hint: Docker will give to each container a random name, check
 it under "docker container list --all" under NAMES or use ID
