@@ -40,6 +40,9 @@ $ docker logs -f CONTAINER_NAME
 
 Remember to use this command each time CONTAINER_NAME is launched
 
+# INTERACT WITH INTERNAL CONSOLE (INSIDE CONTAINER)
+docker exec -it CONTAINER_NAME
+
 *************************************************************
 # 2
 
