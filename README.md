@@ -7,6 +7,9 @@ The second assignment has been divided into 3 sections:
 # 1
 
 Win: download "Docker Toolbox" from docker.org and install it
+Other: follow instruction on docs.docker.org
+
+(commands specs on bottom of paragraph)
 
 * CREATE IMAGE:
 $ docker build -t IMAGE_NAME PATH/TO/FOLDER/Dockerfile
@@ -17,13 +20,17 @@ $ cd PATH/TO/MY/Dockerfile
 $ docker build -t IMAGE_NAME .
 
 * CREATE VOLUME:
-$ docker volume create datadb
-// create folder datadb ?
+$ docker volume create VOLUME_NAME #skip if you use Dockerfile
+
+Hint: https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume
 
 * RUN CONTAINER
 # docker run -v //c/<path>:/<container path> IMAGE_NAME
 
-$ docker run -v /c/PATH/TO/FOLDER/?:/? lab2
+$ docker run -v //d/Mega/POLITO/Applicazioni\ Internet/LAB/lab2/dbdata:/datadb
+
+Hint: Docker will give to each container a random name, check
+it under "docker container list --all" under NAMES or use ID
 *************************************************************
 # 2
 
