@@ -12,7 +12,10 @@ Other: follow instruction on docs.docker.org
 (commands specs on bottom of paragraph)
 
 * CREATE IMAGE:
-$ docker build -t IMAGE_NAME PATH/TO/FOLDER/Dockerfile
+# Dockerfile must not be specified, it will be searched automatically
+
+$ docker build -t IMAGE_NAME PATH/TO/Dockerfile
+
 
 # or use:
 
@@ -43,9 +46,11 @@ Remember to use this command each time CONTAINER_NAME is launched
 # INTERACT WITH INTERNAL CONSOLE (INSIDE CONTAINER)
 docker exec -it CONTAINER_NAME
 
+
+
 *************************************************************
 # 2
 
-
+search for POSTGRES JDBC URL and use it inside java
 *************************************************************
 # 3
