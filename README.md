@@ -1,6 +1,6 @@
 The second assignment has been divided into 3 sections:
-1 - Docker	(1, 2, 3)
-2 - JDBC	(4)
+1 - Docker	(1, 2)
+2 - JDBC	(3, 4)
 3 - WebApp	(5, 6)
 
 *************************************************************
@@ -32,10 +32,17 @@ take PATH and use the following:
 
 Hint: Docker will give to each container a random name, check
 it under "docker container list --all" under NAMES or use ID
+
+# TO LOG ALL
+
+Open another console
+$ docker logs -f CONTAINER_NAME
+
+Remember to use this command each time CONTAINER_NAME is launched
+
 *************************************************************
 # 2
 
 
 *************************************************************
 # 3
-
