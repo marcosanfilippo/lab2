@@ -20,7 +20,7 @@ $ cd PATH/TO/MY/Dockerfile
 $ docker build -t IMAGE_NAME .
 
 * CREATE VOLUME:
-$ docker volume create VOLUME_NAME #skip if you use Dockerfile
+$ docker volume create VOLUME_NAME
 
 Hint: https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume
 

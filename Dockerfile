@@ -18,8 +18,3 @@ ENV POSTGRES_USER="postgres" POSTGRES_PASSWORD="ai-user-password" POSTGRES_DB="t
 
 #File che definisce lo schema del database da utilizzare per l'esercitazione
 COPY schema.sql /docker-entrypoint-initdb.d/schema.sql
-
-#Custom
-
-VOLUME /datadb
-EXPOSE 5432
